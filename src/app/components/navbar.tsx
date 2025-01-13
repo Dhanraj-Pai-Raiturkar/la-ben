@@ -3,7 +3,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { navigationMenu } from "../constants";
-import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
