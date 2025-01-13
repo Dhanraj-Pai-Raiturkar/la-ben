@@ -17,7 +17,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <nav className="w-full p-2 md:px-20 md:py-2">
+      <nav className="w-full p-2 md:px-10 lg:px-12 md:py-2">
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
@@ -53,7 +53,7 @@ const Navbar = () => {
           </div>
           <ul className="hidden md:flex w-full items-center justify-end">
             {navigationMenu.map((navItem, index) => (
-              <li key={`navItem-desktop-${index}`} className="mx-4">
+              <li key={`navItem-desktop-${index}`} className="lg:mx-4">
                 <span className="uppercase text-base text-gray-800 hover:text-gray-500 px-3 py-2 rounded-md text-sm font-semibold hover:cursor-pointer">
                   {navItem.title}
                 </span>
