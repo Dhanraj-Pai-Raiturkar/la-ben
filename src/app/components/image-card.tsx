@@ -35,7 +35,7 @@ const ImageCard: React.FC<ImageCardProps> = ({
         objectFit="cover"
         className="rounded-md"
       />
-      <div className="flex flex-col p-2 md:p-4 absolute inset-0 flex items-start justify-end bg-black bg-opacity-45 text-white text-lg font-semibold rounded-md">
+      <div className="flex flex-col p-4 lg:p-2 md:p-4 absolute inset-0 flex items-start justify-end bg-black bg-opacity-45 text-white text-lg font-semibold rounded-md">
         <h2 className="md:text-2xl text-xl md:font-bold leading-tight font-semibold uppercase mb-4">
           {title}
         </h2>

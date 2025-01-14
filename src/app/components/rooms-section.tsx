@@ -13,24 +13,26 @@ import ImageCard from "./image-card";
 
 const RoomsSection = () => {
   return (
-    <SectionLayout>
-      <SectionHeader
-        title={"Discover Our Luxurious Rooms"}
-        description={
-          "Experience the epitome of comfort and elegance in our beautifully designed rooms."
-        }
-      />
-      <SwiperLayout
-        breakpoints={sliderBreakpointsRooms}
-        displayNavigation={true}
-        autoPlay={sliderAutoplayConfig}
-        height="33rem"
-      >
-        {roomsData.map((_, index) => (
-          <ImageCard height="h-[35rem]" key={index} {..._} />
-        ))}
-      </SwiperLayout>
-    </SectionLayout>
+    <div id="rooms">
+      <SectionLayout>
+        <SectionHeader
+          title={"Discover Our Luxurious Rooms"}
+          description={
+            "Experience the epitome of comfort and elegance in our beautifully designed rooms."
+          }
+        />
+        <SwiperLayout
+          breakpoints={sliderBreakpointsRooms}
+          displayNavigation={true}
+          autoPlay={sliderAutoplayConfig}
+          height="33rem"
+        >
+          {roomsData.map((_, index) => (
+            <ImageCard height="h-[35rem]" key={index} {..._} />
+          ))}
+        </SwiperLayout>
+      </SectionLayout>
+    </div>
   );
 };
 

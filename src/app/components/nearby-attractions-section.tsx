@@ -11,24 +11,26 @@ import SectionLayout from "./section-layout";
 
 const NearbyAttractionSection = () => {
   return (
-    <SectionLayout>
-      <SectionHeader
-        title={"Explore Our Neighborhood"}
-        description={
-          "Explore the best places around our resort to make your stay unforgettable."
-        }
-      />
-      <SwiperLayout
-        breakpoints={sliderBreakpoints}
-        displayNavigation={true}
-        autoPlay={sliderAutoplayConfig}
-        height="300px"
-      >
-        {nearbyAttractions.map((attractions, index) => (
-          <Card key={index} {...attractions} />
-        ))}
-      </SwiperLayout>
-    </SectionLayout>
+    <div id="attractions">
+      <SectionLayout>
+        <SectionHeader
+          title={"Explore Our Neighborhood"}
+          description={
+            "Explore the best places around our resort to make your stay unforgettable."
+          }
+        />
+        <SwiperLayout
+          breakpoints={sliderBreakpoints}
+          displayNavigation={true}
+          autoPlay={sliderAutoplayConfig}
+          height="300px"
+        >
+          {nearbyAttractions.map((attractions, index) => (
+            <Card key={index} {...attractions} />
+          ))}
+        </SwiperLayout>
+      </SectionLayout>
+    </div>
   );
 };
 

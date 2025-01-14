@@ -3,7 +3,7 @@ import { title } from "process";
 export const navigationMenu = [
   { title: "rooms" },
   { title: "restaurants" },
-  { title: "location" },
+  { title: "attractions" },
 ];
 
 export const nearbyAttractions = [
@@ -17,7 +17,7 @@ export const nearbyAttractions = [
   {
     title: "Our Lady Church",
     description:
-      "Visit the historic the nearby Lady Church, a beautiful example of colonial architecture and a place of serene worship.",
+      "Visit the historic Church, a beautiful example of colonial architecture and a place of serene worship.",
     image: "/attraction-church3.jpg",
     link: "#",
   },
