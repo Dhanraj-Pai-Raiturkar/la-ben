@@ -42,7 +42,7 @@ const ImageCard: React.FC<ImageCardProps> = ({
         <p className="text-xs font-medium md:text-base text-left md:mb-1 lg:mb-4 w-1/2">
           {description}
         </p>
-        <button className="mt-4 px-4 py-2 bg-white text-black rounded-md hover:bg-gray-700 text-xs font-semibold">
+        <button className="mt-4 px-4 py-2 bg-white text-black rounded-md hover:bg-gray-300 text-xs font-semibold">
           <a href={link}>{linkText}</a>
         </button>
       </div>
