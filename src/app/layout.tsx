@@ -15,8 +15,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "LaBen - A budget resort in Goa India",
-  description: "website for La Ben a budget resort in Goa India",
+  title: "The Resort - A resort in Goa India",
+  description: "website for The Resort a budget resort in Goa India",
 };
 
 export default function RootLayout({
