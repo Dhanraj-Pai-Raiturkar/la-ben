@@ -33,7 +33,7 @@ const Card: React.FC<CardProps> = ({ title, description, image, link }) => {
       <h2 className="text-lg font-semibold my-2 text-slate-600">{title}</h2>
       <p className="text-gray-500 text-base text-slate-600">{description}</p>
       <button className="mt-4 px-4 py-2 bg-black text-white rounded-md hover:bg-gray-700 text-xs font-semibold">
-        <a href={link}>Read More</a>
+        <a href={link}>Explore</a>
       </button>
     </div>
   );

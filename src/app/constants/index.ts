@@ -1,3 +1,5 @@
+import { title } from "process";
+
 export const navigationMenu = [
   { title: "rooms" },
   { title: "restaurants" },
@@ -6,37 +8,37 @@ export const navigationMenu = [
 
 export const nearbyAttractions = [
   {
-    title: "Colva beach",
+    title: "The Beach",
     description:
-      "Colva Beach is the oldest, largest and the most spectacular beaches of South Goa.",
+      "Enjoy the sun, sand, and sea at the nearby pristine beach, perfect for relaxation and water activities.",
     image: "/attraction-beach.jpg",
     link: "#",
   },
   {
-    title: "Our Lady Of Merces Church",
+    title: "Our Lady Church",
     description:
-      "Our Lady of Mercy Church is a beautiful church located in the village of Colva in South Goa.",
+      "Visit the historic the nearby Lady Church, a beautiful example of colonial architecture and a place of serene worship.",
     image: "/attraction-church3.jpg",
     link: "#",
   },
   {
-    title: "Boomerang beach bar",
+    title: "Beach Bar",
     description:
-      "Boomerang Beach Bar is a beach shack located on the Colva Beach in South Goa.",
+      "Unwind with a refreshing drink at the nearby vibrant beach bar, offering stunning ocean views.",
     image: "/attraction-beach-bar1.jpg",
     link: "#",
   },
   {
-    title: "The gatsby pub",
+    title: "Resto Pub",
     description:
-      "The Gatsby Pub is a popular pub located in the village of Colva in South Goa.",
+      "Enjoy a lively atmosphere with great food and drinks the nearby Resto Pub.",
     image: "/attraction-pub1.jpg",
     link: "#",
   },
   {
-    title: "Club margarita",
+    title: "Club Ibiza",
     description:
-      "Club Margarita is a popular nightclub located in the village of Colva in South Goa.",
+      "Dance the night away at Club Ibiza, the hottest spot for nightlife and entertainment.",
     image: "/attraction-club1.jpeg",
     link: "#",
   },
@@ -47,21 +49,21 @@ export const roomsData = [
     title: "Deluxe Room",
     description:
       "Experience luxury and comfort in our spacious Deluxe Rooms, featuring modern amenities and elegant decor.",
-    image: "/room1.jpg",
+    image: "/room11.jpg",
     link: "#",
   },
   {
     title: "Standard Room",
     description:
       "Relax in our comfortable Standard Rooms, offering a cozy and affordable stay with essential amenities.",
-    image: "/room3.jpeg",
+    image: "/room12.jpeg",
     link: "#",
   },
   {
     title: "Suite",
     description:
       "Indulge in our luxurious Suites, featuring separate living areas, premium amenities, and exquisite decor.",
-    image: "/room10.jpg",
+    image: "/room14.webp",
     link: "#",
   },
 ];
@@ -101,3 +103,20 @@ export const sliderAutoplayConfig = {
   disableOnInteraction: false,
   pauseOnMouseEnter: true,
 };
+
+export const restaurantsData = [
+  {
+    title: "The Lounge",
+    description:
+      "Enjoy a casual dining experience at The Lounge, offering a variety of snacks, beverages, and light meals.",
+    image: "/restaurant1.jpg",
+    link: "#",
+  },
+  {
+    title: "The Terrace",
+    description:
+      "Savor delicious meals and refreshing drinks at The Terrace, our rooftop restaurant with stunning views.",
+    image: "/restaurant2.jpg",
+    link: "#",
+  },
+];

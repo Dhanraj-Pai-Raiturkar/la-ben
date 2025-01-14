@@ -5,15 +5,22 @@ import React from "react";
 export type SwiperNavBtnProps = {
   onClick: () => void;
   direction: "prev" | "next";
+  color: "black" | "white";
 };
 
-const SwiperNavBtn: React.FC<SwiperNavBtnProps> = ({ onClick, direction }) => {
+const SwiperNavBtn: React.FC<SwiperNavBtnProps> = ({
+  onClick,
+  direction,
+  color = "black",
+}) => {
   const getButton = () => {
     switch (direction) {
       case "prev":
         return (
           <button
-            className="hidden md:flex bg-transparent swiper-button-prev w-12 h-12 flex items-center justify-center hover:bg-gray-200 transition"
+            className={`hidden md:flex bg-transparent swiper-button-prev w-12 h-12 flex items-center justify-center hover:bg-gray-200 transition ${
+              color === "white" && "hover:bg-gray-800"
+            }`}
             aria-label="Previous Slide"
             onClick={onClick}
           >
@@ -23,7 +30,9 @@ const SwiperNavBtn: React.FC<SwiperNavBtnProps> = ({ onClick, direction }) => {
               viewBox="0 0 24 24"
               strokeWidth="2"
               stroke="currentColor"
-              className="w-6 h-6 text-gray-800"
+              className={`w-6 h-6 ${
+                color === "white" ? "text-white" : "text-black"
+              }`}
             >
               <path
                 strokeLinecap="round"
@@ -36,7 +45,9 @@ const SwiperNavBtn: React.FC<SwiperNavBtnProps> = ({ onClick, direction }) => {
       case "next":
         return (
           <button
-            className="hidden md:flex bg-transparent swiper-button-next w-12 h-12 flex items-center justify-center hover:bg-gray-200 transition"
+            className={`hidden md:flex bg-transparent swiper-button-next w-12 h-12 flex items-center justify-center hover:bg-gray-200 transition ${
+              color === "white" && "hover:bg-gray-800"
+            }`}
             aria-label="Next Slide"
             onClick={onClick}
           >
@@ -46,7 +57,9 @@ const SwiperNavBtn: React.FC<SwiperNavBtnProps> = ({ onClick, direction }) => {
               viewBox="0 0 24 24"
               strokeWidth="2"
               stroke="currentColor"
-              className="w-6 h-6 text-gray-800"
+              className={`w-6 h-6 ${
+                color === "white" ? "text-white" : "text-black"
+              }`}
             >
               <path
                 strokeLinecap="round"

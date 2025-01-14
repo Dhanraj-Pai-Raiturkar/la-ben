@@ -14,7 +14,9 @@ export type SwiperLayoutProps = {
   breakpoints?: SwiperOptions["breakpoints"];
   autoPlay?: SwiperOptions["autoplay"];
   height?: CSSProperties["height"];
+  width?: CSSProperties["width"];
   displayNavigation?: boolean;
+  navColor?: "black" | "white";
 };
 
 const SwiperLayout: React.FC<SwiperLayoutProps> = ({
@@ -23,20 +25,24 @@ const SwiperLayout: React.FC<SwiperLayoutProps> = ({
   autoPlay,
   height,
   displayNavigation,
+  width = "w-full",
+  navColor = "black",
 }) => {
   SwiperCore.use([Autoplay]);
   const swiperRef = useRef({});
   return (
-    <div className="flex justify-center items-center w-full cursor-grab active:cursor-grabbing">
+    <div
+      className={`flex justify-center items-center ${width} cursor-grab active:cursor-grabbing`}
+    >
       {displayNavigation && (
         <SwiperNavBtn
           onClick={() => (swiperRef.current as any)?.slidePrev()}
           direction="prev"
+          color={navColor}
         />
       )}
       <Swiper
         breakpoints={breakpoints}
-        // style={{ height: height ?? "500px" }}
         loop={true}
         autoplay={autoPlay}
         navigation={true}
@@ -59,6 +65,7 @@ const SwiperLayout: React.FC<SwiperLayoutProps> = ({
         <SwiperNavBtn
           onClick={() => (swiperRef.current as any)?.slideNext()}
           direction="next"
+          color={navColor}
         />
       )}
     </div>

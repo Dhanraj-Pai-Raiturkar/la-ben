@@ -21,7 +21,6 @@ const Navbar = () => {
           <button
             onClick={toggleMenu}
             className="text-gray-800 focus:outline-none"
-            // className="bg-black bg-opacity-75 text-white p-2 rounded-md focus:outline-none"
           >
             <svg
               className="w-6 h-6"
@@ -41,14 +40,9 @@ const Navbar = () => {
         </div>
         <div className="flex justify-between">
           <div className="hidden md:flex items-center justify-center">
-            {/* <Image
-              className="cursor-pointer"
-              alt="logo"
-              src="/logomain.jpeg"
-              width={50}
-              height={50}
-            /> */}
-            <h1 className="text-xl font-semibold text-gray-800 w-48">La Ben</h1>
+            <h1 className="text-xl font-semibold text-gray-800 w-48">
+              The Resort
+            </h1>
           </div>
           <ul className="hidden md:flex w-full items-center justify-end">
             {navigationMenu.map((navItem, index) => (

@@ -27,7 +27,7 @@ const RoomsSection = () => {
         height="33rem"
       >
         {roomsData.map((_, index) => (
-          <ImageCard key={index} {..._} />
+          <ImageCard height="h-[35rem]" key={index} {..._} />
         ))}
       </SwiperLayout>
     </SectionLayout>
