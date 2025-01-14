@@ -2,34 +2,36 @@ import React from "react";
 import SwiperLayout from "./swiper-layout";
 import {
   nearbyAttractions,
+  roomsData,
   sliderAutoplayConfig,
-  sliderBreakpoints,
+  sliderBreakpointsRooms,
 } from "../constants";
 import Card from "./card";
 import SectionHeader from "./section-header";
 import SectionLayout from "./section-layout";
+import ImageCard from "./image-card";
 
-const NearbyAttractionSection = () => {
+const RoomsSection = () => {
   return (
     <SectionLayout>
       <SectionHeader
-        title={"Explore Our Neighborhood"}
+        title={"Discover Our Luxurious Rooms"}
         description={
-          "Explore the best places around our resort to make your stay unforgettable."
+          "Experience the epitome of comfort and elegance in our beautifully designed rooms."
         }
       />
       <SwiperLayout
-        breakpoints={sliderBreakpoints}
+        breakpoints={sliderBreakpointsRooms}
         displayNavigation={true}
         autoPlay={sliderAutoplayConfig}
-        height="300px"
+        height="33rem"
       >
-        {nearbyAttractions.map((attractions, index) => (
-          <Card key={index} {...attractions} />
+        {roomsData.map((_, index) => (
+          <ImageCard key={index} {..._} />
         ))}
       </SwiperLayout>
     </SectionLayout>
   );
 };
 
-export default NearbyAttractionSection;
+export default RoomsSection;

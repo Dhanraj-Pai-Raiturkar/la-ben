@@ -14,7 +14,7 @@ export default {
         background2: "#252525",
       },
       backgroundImage: {
-        bannerImage: "url('/hero-image.webp')",
+        bannerImage: "url('/hero-resort1.avif')",
         blackOverlay:
           "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%)",
       },

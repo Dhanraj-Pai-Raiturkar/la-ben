@@ -36,12 +36,12 @@ const SwiperLayout: React.FC<SwiperLayoutProps> = ({
       )}
       <Swiper
         breakpoints={breakpoints}
-        style={{ height: height ?? "500px" }}
+        // style={{ height: height ?? "500px" }}
         loop={true}
         autoplay={autoPlay}
         navigation={true}
         modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={20}
+        spaceBetween={0}
         slidesPerView={1}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
@@ -50,7 +50,9 @@ const SwiperLayout: React.FC<SwiperLayoutProps> = ({
         }}
       >
         {React.Children.toArray(children).map((child, index) => (
-          <SwiperSlide key={index}>{child}</SwiperSlide>
+          <SwiperSlide className="p-1" key={index}>
+            {child}
+          </SwiperSlide>
         ))}
       </Swiper>
       {displayNavigation && (

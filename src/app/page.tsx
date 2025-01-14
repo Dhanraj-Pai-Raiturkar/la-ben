@@ -1,6 +1,9 @@
 import HeroSection from "./components/hero-section";
+import ImageCard from "./components/image-card";
 
 import NearbyAttractionSection from "./components/nearby-attractions-section";
+import RestaurantsSection from "./components/restaurants-section";
+import RoomsSection from "./components/rooms-section";
 
 export default function Home() {
   return (
@@ -8,6 +11,8 @@ export default function Home() {
       <main className="flex flex-col w-full">
         <div className="w-full">
           <HeroSection />
+          <RoomsSection />
+          <RestaurantsSection />
           <NearbyAttractionSection />
         </div>
       </main>
